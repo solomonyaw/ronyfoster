@@ -131,16 +131,36 @@ nav {
     text-align: center;
   }
   header {
-    margin-bottom: 20rem;
-    height: 70%;
+    margin-bottom: 35rem;
+    height: 50%;
   }
 
   .information {
-    margin-top: 50rem;
-    margin-bottom: 5rem;
-    padding-top: 30rem;
-    padding-bottom: 10rem;
-    p
+    margin-bottom: 2rem;
+    padding-top: 90rem;
+  }
+  .information p {
+    margin-bottom: 30rem;
+    padding-bottom: 30rem;
+  }
+
+  .ronyimg {
+    padding-top: 1rem;
+    height: 10rem;
+  }
+
+  .information2 {
+  }
+  .information2 h2 {
+    margin-top:37rem;
+  }
+
+  .information2 p {
+    margin-top: -300rem;
+  }
+
+  .rfnftimg {
+ 
   }
 }
 
