@@ -131,13 +131,13 @@ nav {
     text-align: center;
   }
   header {
-    margin-bottom: 30rem;
+    margin-bottom: 5rem;
   }
 
   .information {
     margin-top: 30rem;
-    margin-bottom: 30rem;
-    padding: 30rem;
+    margin-bottom: 10rem;
+    padding: 10rem;
   }
 }
 
