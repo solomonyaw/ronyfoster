@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet/bootstrap.css" />
+    <link rel="stylesheet" href="./stylesheet/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="./stylesheet/reset.css" />
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Molle:ital@1&family=Monoton&family=Permanent+Marker&family=Shrikhand&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/jquery.js"></script>
+    <title>Naoki Ogata</title>
+  </head>
+  <body>
+    <!--<div id="regPop">
+        <p>You've successfully registered!!</p>
+    </div>
+    <div class="RegModal row" id="RegModal">
+        <div class="row reg-modal-content">
+            <form class="row container" id="regForm">
+                <h2 id="regTitle">Register for a fun club!</h2>
+
+                <i class="fas fa-times" id="regTimes"></i>
+                <h2><i class="fas fa-user"></i> Your Name</h2>
+                <div class="col col-12 col-sm-6 g-4">
+                    <div class="form-floating popup"> 
+                        <input type="text" class="form-control" id="RGfirstName" placeholder="first name" required>
+                        <label for="RGfirstName">First Name</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-6 g-4">
+                    <div class="form-floating popup">
+                        <input type="text" class="form-control" id="RGlastName" placeholder="lastName" required>
+                        <label for="RGlastName">Last Name</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <h2><i class="fas fa-address-book"></i> Your contacts</h2>
+                <div class="col col-12 col-lg-6 g-4">
+                    <div class="form-floating popup">
+                        <input type="email" class="form-control" id="RGemail" placeholder="email" required>
+                        <label for="RGemail">Email</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg-6 g-4">
+                    <div class="form-floating popup">
+                        <input type="tel" class="form-control" id="RGtel" placeholder="tel" required>
+                        <label for="RGtel">Phone Number</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <h2><i class="fas fa-map-marked-alt"></i> Your Address</h2>
+                <div class="col col-12 g-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="RGaddress" placeholder="street address" required>
+                        <label for="RGaddress">Street Address</label>
+                    </div>
+                </div>
+                <div class="col col-12 g-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="RGaddress2" placeholder="street address2">
+                        <label for="RGaddress2">Street Address Line 2</label>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg-6 g-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="RGcity" placeholder="City" required>
+                        <label for="RGcity">City</label>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg-6 g-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="RGprovince" placeholder="Province" required>
+                        <label for="RGcity">Province</label>
+                    </div>
+                </div>
+                <div class="col col-6 g-4">
+                    <div class="form-floating popup">
+                        <input type="text" class="form-control" id="RGzip" placeholder="Zip code" required>
+                        <label for="RGzip">Zip code</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <h2><i class="fas fa-unlock-alt"></i> Create your password</h2>
+                <div class="col col-12 col-lg-5 g-4">
+                    <div class="form-floating">
+                        <input type="password" class="form-control pass" id="RGpass" placeholder="Password" required>
+                        <label for="RGpass">Password</label>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg-5 g-4">
+                    <div class="form-floating">
+                        <input type="password" class="form-control pass" id="RGpass2" placeholder="Password2" required>
+                        <label for="RGpass2">Confirm your password</label>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-2">
+                    <button id="RegShowPass" type="button">Show Password</button>
+                </div>
+                <div class="col col-12 g-4">
+                    <button type="submit" id="regSend">Register</button>
+                </div>    
+            </form>
+        </div>
+    </div>
+    <div class="LogModal" id="LogModal">
+        <div class="row log-modal-content container">
+            <form class="row container" id="logForm">
+                <h2 id="logTitle">Login</h2>
+                <i class="fas fa-times" id="logTimes"></i>
+                <h2><i class="fas fa-user"></i> Name</h2>
+                <div class="col col-12 g-4">
+                    <div class="form-floating popup"> 
+                        <input type="text" class="form-control" id="LGfirstName" placeholder="first name" required>
+                        <label for="LGfirstName" id="logFname">First Name</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <div class="col col-12 g-4">
+                    <div class="form-floating popup">
+                        <input type="text" class="form-control" id="LGlastName" placeholder="lastName" required>
+                        <label for="LGlastName">Last Name</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <div class="col col-12">
+                    <h2>Login with</h2>
+                </div>
+                <div class="col col-6 g-4 logtype">
+                    <label for="logEmail">Email</label>
+                    <input type="radio" name="login" id="logEmail" checked>
+                </div>
+                <div class="col col-6 g-4 logtype">
+                    <label for="logTel">Phone Number</label>
+                    <input type="radio" name="login" id="logTel">
+                </div>
+                <div class="col col-12 g-4 logEmail">
+                    <h2><i class="fas fa-envelope"></i> Email</h2>
+                    <div class="form-floating popup">
+                        <input type="email" class="form-control" id="LGemail" placeholder="email">
+                        <label for="LGemail">Email</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <div class="col col-12 g-4 logTel" style="display: none;">
+                    <h2><i class="fas fa-phone-alt"></i> Phone Number</h2>
+                    <div class="form-floating popup">
+                        <input type="tel" class="form-control" id="LGtel" placeholder="tel" value="7777777777">
+                        <label for="LGtel">Phone Number</label>
+                        <span class="popuptext">Hello</span>
+                    </div>
+                </div>
+                <h2><i class="fas fa-unlock-alt"></i> password</h2>
+                <div class="col col-12 col-md-9 g-4">
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="LGpass" placeholder="Password" required>
+                        <label for="LGpass">Password</label>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-3 g-4" id="showPass">
+                    <button id="logShowPass" type="button">Show Password</button>
+                </div>
+                <div class="col col-12" id="remember">
+                    <h3>Remember Me</h3>
+                    <input type="checkbox">
+                </div>
+                <div class="col col-12 g-4">
+                    <button type="submit" id="login">Login</button>
+                </div>    
+            </form>
+        </div>
+    </div>-->
+    <header>
+      <ul class="nav">
+        <li class="nav-item">
+          <!--<a id="regBtn" class="nav-link active" aria-current="page" href="#">Register</a>-->
+        </li>
+        <li class="nav-item">
+          <!-- <a id="logBtn" class="nav-link" href="#">Login</a>-->
+        </li>
+      </ul>
+      <div class="row header">
+        <div class="col col-12 col-md-6 header-contents">
+          <img class="logo" src="img/logo.png" alt="logo" />
+          <h1>Rony foster!</h1>
+          <p>Erroh Music</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="information">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-6 info-left">
+              <h2>About me</h2>
+              <p style="padding: 2rem; line-height: 1.6rem">
+                Foster Kissi Asante, better known or identified by his stage
+                name Rony Foster, is a Ghanaian-Italian rapper and song writer
+                born in Koforidua,Ghana but now based in Brescia,Italy. He rose
+                to fame in Italy in 2016 when he got nominated for the category
+                ”best music video” with his single, “No Mercy” during a ceremony
+                held by African Royal Awards (ARA). He has also performed on
+                stage in Italy with great Ghanaian artists like Medikal, KiDi
+                ,Fameye and Stonebwoy. Though Rony is yet to release an album
+                (which is a work in progress to be released this year), he has
+                workedon a couple of singles which are available on most digital
+                music platforms such as Apple Music, Soundcloud ,Audiomack,
+                YouTube and the likes. He has recently released a fresh hip-life
+                single titled “warm up” which he has personally confirmed is
+                providing a good feedback from his fans both in Italy and Ghana
+                who felt in love with the tune.
+              </p>
+            </div>
+            <div class="col col-12 col-md-6 info-right">
+              <img src="./img/rony.jpg" alt="record" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="information2">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-6 info2-left">
+              <img src="./img/rfnft.png" alt="radio" />
+            </div>
+            <div class="col col-12 col-md-6 info2-right">
+              <h2>RFNFT</h2>
+              <p style="padding: 2rem; line-height: 1.6rem">
+                Technology has been a 7th wonder to music playing the most vital
+                role in its evolution and advancement. It has in fact inspired
+                diverse ways to create, listen and commercialize music and art.
+                The domination of Non-Fungible Tokens better known as NFT’s in
+                the mainstream gifts a bunch of endless options to curator’s
+                trade their art’s digital ownership rights to interested buyers.
+                This commercial window is exciting news to Rony Foster and his
+                music ambitions motivating his move to introducing his own NFT
+                platform dubbed the RFNFT, Rony Foster NFT.Rony hopes to build
+                an NFT platform coarsely for his fans hoping to provide them a
+                chance to own hi digital assets.
+              </p>
+              <button
+                onclick="window.location.href='https://opensea.io/collection/rony-foster'"
+                class="custom-btn btn-5"
+              >
+                <span>Buy Now</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="albums">
+        <div class="container">
+          <div class="row album-title">
+            <div class="col col-12 album-title">
+              <h2>Singles</h2>
+            </div>
+          </div>
+          <div class="row album-detail">
+            <div class="col col-12 col-md-4 al-left">
+              <img style="height: 50%" src="./img/wi-fi.jpg" alt="album" />
+              <h2>Wi-Fi</h2>
+              <p>Available at</p>
+              <div class="snsBox">
+                <a
+                  href="https://open.spotify.com/track/6lv9YjTPFKvw4Bnxc1QRnk"
+                  target="blank"
+                  ><i class="fab fa-spotify"></i
+                ></a>
+                <a
+                  href="https://music.apple.com/us/album/wi-fi-single/1524336702"
+                  target="blank"
+                  ><i class="fab fa-apple"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/watch?v=ZoEr9JbJznQ"
+                  target="blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col col-12 col-md-4 al-middle">
+              <img style="height: 50%" src="./img/pop.jpg" alt="album" />
+              <h2>Pop Bottles</h2>
+              <p>Available at</p>
+              <div class="snsBox">
+                <a
+                  href="https://open.spotify.com/track/5XswEK69P8tBThUApT57OH"
+                  target="blank"
+                  ><i class="fab fa-spotify"></i
+                ></a>
+                <a href="#" target="blank"><i class="fab fa-apple"></i></a>
+                <a
+                  href="https://www.youtube.com/watch?v=NcsxsOr8VsQ"
+                  target="blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col col-12 col-md-4 al-right">
+              <img src="./img/fire.jpg" style="height: 50%" alt="album" />
+              <h2>Fire</h2>
+              <p>Available at</p>
+              <div class="snsBox">
+                <a
+                  href="https://open.spotify.com/album/7zeFPLUNBeWWTBwcCGpfO9"
+                  target="blank"
+                  ><i class="fab fa-spotify"></i
+                ></a>
+                <a
+                  href="https://music.apple.com/us/album/fire-single/1506676820"
+                  target="blank"
+                  ><i class="fab fa-apple"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/watch?v=qOerIE8f2gQ"
+                  target="blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="youtube">
+        <div class="container">
+          <div class="row">
+            <div class="col col-12 col-md-6 you-left">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/h8WULSpoN9I"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col col-12 col-md-6 you-right">
+              <h2>New video on YouTube</h2>
+              <p style="line-height: 1.6rem">
+                This new song is called "Warm-Up".
+              </p>
+              <p style="line-height: 1.6rem">
+                This song is a story about how the Ghanaian music industry
+                evolved
+              </p>
+              <p style="padding-bottom: 0.5rem; line-height: 1.6rem">
+                Please check it out!
+              </p>
+              <button
+                onclick="window.location.href='https://www.youtube.com/channel/UCJnl2wXgEbzJaRLKXWFkmzQ'"
+                class="custom-btn btn-5"
+              >
+                <span>Subscribe</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="events">
+        <div class="row events-top">
+          <div class="col col-12">
+            <h2>Podcast</h2>
+          </div>
+        </div>
+        <!--<div class="row events-bottom">
+          <div class="col col-12 col-md-6 toronto">
+            <div class="toronto-detail">
+              <h2>Toronto</h2>
+              <h3>Nov 25</h3>
+              <a href="#">Book a ticket</a>
+            </div>
+          </div>
+          <div class="col col-12 col-md-6 bottom-right">
+            <div class="row">
+              <div class="col col-12 vancouver">
+                <div class="vancouver-detail">
+                  <h2>Vancouver</h2>
+                  <h3>Nov 29</h3>
+                  <a href="#">Book a ticket</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12 newyork">
+                <div class="newyork-detail">
+                  <h2>New York</h2>
+                  <h3>Dec 25</h3>
+                  <a href="#">Book a ticket</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>-->
+        <iframe
+          width="50%"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1297483447&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <div
+          style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          "
+        >
+          <a
+            href="https://soundcloud.com/solomon-yaw"
+            title="Rony Foster Podcast"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Rony Foster Podcast</a
+          >
+          ·
+          <a
+            href="https://soundcloud.com/solomon-yaw/my-interview-with-ahotor-fm-923-in-ghana-part-2"
+            title="My interview with Ahotor FM 92.3 in Ghana - Part 2"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >My interview with Ahotor FM 92.3 in Ghana - Part 2</a
+          >
+        </div>
+        <iframe
+          width="50%"
+          height="166"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1297480684&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+        <div
+          style="
+            font-size: 10px;
+            color: #cccccc;
+            line-break: anywhere;
+            word-break: normal;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+              Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+            font-weight: 100;
+          "
+        >
+          <a
+            href="https://soundcloud.com/solomon-yaw"
+            title="Rony Foster Podcast"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >Rony Foster Podcast</a
+          >
+          ·
+          <a
+            href="https://soundcloud.com/solomon-yaw/my-interview-with-ahotor-fm-923-in-ghana-part-1"
+            title="My interview with Ahotor FM 92.3 in Ghana - Part 1"
+            target="_blank"
+            style="color: #cccccc; text-decoration: none"
+            >My interview with Ahotor FM 92.3 in Ghana - Part 1</a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contacts">
+        <div class="back">
+          <div class="container">
+            <div class="row">
+              <div class="col col-12 contacts-title">
+                <h2>Booking Inquiries</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col-12 col-md-6 contacts-left">
+                <div class="contact-box">
+                  <h3>Contacts</h3>
+                  <p><i class="fas fa-phone-alt"></i> (+39) (329)-114-3219</p>
+                  <p>
+                    <i class="fas fa-envelope-open"></i> ronyasante92@gmail.com
+                  </p>
+                </div>
+                <div class="address">
+                  <p>
+                    <i class="fas fa-map-marker-alt"></i> Via corso lepetit 43,
+                    Darfo boario terme
+                  </p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89418.72050471207!2d10.153638938088207!3d45.54358579926856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781766ea2b0294d%3A0x22cd4615476aea04!2sBrescia%2C%20Province%20of%20Brescia%2C%20Italy!5e0!3m2!1sen!2sgh!4v1664348035044!5m2!1sen!2sgh"
+                    width="600"
+                    height="50%"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="contacts-sns">
+                  <!-- <h3>SNS</h3> -->
+                  <a
+                    id="test"
+                    href="https://twitter.com/rony_foster"
+                    target="blank"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="https://www.instagram.com/ronyfoster_official/?hl=en"
+                    target="blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="https://web.facebook.com/Ronyfoster" target="blank"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6 contacts-right">
+                <form class="row form" action="">
+                  <div class="col col-12 col-xl-6 g-4">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        placeholder="first name"
+                        required
+                      />
+                      <label for="firstName">First Name</label>
+                    </div>
+                  </div>
+                  <div class="col col-12 col-xl-6 g-4">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="lastName"
+                        required
+                      />
+                      <label for="lastName">Last Name</label>
+                    </div>
+                  </div>
+                  <div class="col col-12 g-4">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="example@gmail.com"
+                        required
+                      />
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col col-12 g-4">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        id="floatingTextarea2"
+                        style="height: 150px"
+                      ></textarea>
+                      <label for="floatingTextarea2">Message</label>
+                    </div>
+                  </div>
+                  <div class="col col-12 g-4">
+                    <button type="submit" id="send">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/style.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
