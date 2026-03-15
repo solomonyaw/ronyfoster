@@ -2,10 +2,10 @@
 const BACKGROUND_GIF_URL = "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJqZ3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6Z3R6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKMGpxx7X95vV6w/giphy.gif";
 
 const SLIDER_IMAGES = [
-    "/img/DSC_7637.JPG",
-    "/img/DSC_7655.JPG",
-    "/img/DSC_7670.JPG",
-    "/img/DSC_7974.JPG",
+    "./img/DSC_7637.JPG",
+    "./img/DSC_7655.JPG",
+    "./img/DSC_7670.JPG",
+    "./img/DSC_7974.JPG",
 ];
 
 // Initialize Lucide Icons
