@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rony Foster - Official Website</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-black text-white font-sans selection:bg-red-600 selection:text-white overflow-x-hidden">
+
+    <!-- Background GIF Overlay -->
+    <div id="bg-gif" class="fixed inset-0 z-0 opacity-20 pointer-events-none bg-cover bg-center grayscale contrast-150"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-red-900/30">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <!-- Logo Placeholder -->
+                <div class="h-12 w-12 bg-red-600 rounded-full flex items-center justify-center font-bold text-xl italic tracking-tighter">
+                    RF
+                </div>
+                <span class="text-2xl font-black uppercase tracking-widest text-red-600 hidden sm:block">
+                    Rony Foster
+                </span>
+            </div>
+            <div class="flex gap-6 text-sm font-bold uppercase tracking-widest">
+                <a href="#about" class="hover:text-red-500 transition-colors">About</a>
+                <a href="#music" class="hover:text-red-500 transition-colors">Music</a>
+                <a href="#nft" class="hover:text-red-500 transition-colors">NFT</a>
+                <a href="#contact" class="hover:text-red-500 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="relative z-10 pt-20">
+        <!-- Hero Slider & Video -->
+        <section class="relative w-full">
+            <div class="relative h-[70vh] overflow-hidden" id="hero-slider">
+                <div class="slider-container h-full w-full relative">
+                    <!-- Slides will be injected by JS -->
+                </div>
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50"></div>
+                
+                <div class="absolute inset-0 flex items-center justify-between px-6 z-20">
+                    <button id="prev-slide" class="p-2 bg-black/50 hover:bg-red-600 rounded-full transition-colors">
+                        <i data-lucide="chevron-left" size="32"></i>
+                    </button>
+                    <button id="next-slide" class="p-2 bg-black/50 hover:bg-red-600 rounded-full transition-colors">
+                        <i data-lucide="chevron-right" size="32"></i>
+                    </button>
+                </div>
+
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-2 z-20" id="slider-dots">
+                    <!-- Dots will be injected by JS -->
+                </div>
+
+                <div class="absolute bottom-20 left-10 max-w-2xl z-20">
+                    <h1 class="text-6xl sm:text-8xl font-black uppercase leading-none tracking-tighter">
+                        Rony <span class="text-red-600">Foster</span>
+                    </h1>
+                    <p class="mt-4 text-xl text-gray-300 font-medium tracking-wide uppercase">
+                        Ghanaian-Italian Rapper & Songwriter
+                    </p>
+                </div>
+            </div>
+
+            <!-- Featured Video Embed in Hero Area -->
+            <div class="bg-zinc-900 py-12 px-6">
+                <div class="max-w-4xl mx-auto">
+                    <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl border-2 border-red-600/30">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/ZoEr9JbJznQ" 
+                            title="Rony Foster Featured Video" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative group">
+                    <div class="absolute -inset-4 border-2 border-red-600/30 rounded-2xl group-hover:border-red-600 transition-colors duration-500"></div>
+                    <img 
+                        src="https://picsum.photos/seed/rony-about/600/800" 
+                        alt="Rony Foster" 
+                        class="rounded-xl shadow-2xl relative z-10 w-full grayscale hover:grayscale-0 transition-all duration-700"
+                        referrerpolicy="no-referrer"
+                    >
+                </div>
+                <div>
+                    <h2 class="text-4xl font-black uppercase mb-8 border-l-4 border-red-600 pl-6">Who is Rony Foster?</h2>
+                    <p class="text-lg text-gray-300 leading-relaxed space-y-4">
+                        Foster Kissi Asante, better known or identified by his stage name Rony Foster, is a Ghanaian-Italian rapper and song writer born in Koforidua, Ghana but now based in Brescia, Italy. 
+                        <br><br>
+                        He rose to fame in Italy in 2016 when he got nominated for the category ”best music video” with his single, “No Mercy” during a ceremony held by African Royal Awards (ARA). He has also performed on stage in Italy with great Ghanaian artists like Medikal, KiDi, Fameye and Stonebwoy. 
+                        <br><br>
+                        Though Rony is yet to release an album (which is a work in progress to be released this year), he has worked on a couple of singles which are available on most digital music platforms such as Apple Music, Soundcloud, Audiomack, YouTube and the likes. 
+                        <br><br>
+                        He has recently released a fresh hip-life single titled “warm up” which he has personally confirmed is providing a good feedback from his fans both in Italy and Ghana who felt in love with the tune.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RFNFT Section -->
+        <section id="nft" class="py-24 bg-zinc-950/50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="flex-1 order-2 md:order-1">
+                        <h2 class="text-4xl font-black uppercase mb-8 text-red-600">RFNFT Marketplace</h2>
+                        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                            Technology has been a 7th wonder to music playing the most vital role in its evolution and advancement. It has in fact inspired diverse ways to create, listen and commercialize music and art. 
+                            <br><br>
+                            The domination of Non-Fungible Tokens better known as NFT’s in the mainstream gifts a bunch of endless options to curator’s trade their art’s digital ownership rights to interested buyers. 
+                            <br><br>
+                            This commercial window is exciting news to Rony Foster and his music ambitions motivating his move to introducing his own NFT platform dubbed the RFNFT, Rony Foster NFT. Rony Foster hopes to build an NFT platform coarsely for his fans hoping to provide them a chance to own his digital assets.
+                        </p>
+                        <a 
+                            href="https://opensea.io/collection/rony-foster" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center gap-3 bg-red-600 hover:bg-red-700 text-white font-black uppercase px-10 py-4 rounded-full transition-all transform hover:scale-105"
+                        >
+                            Buy Now <i data-lucide="external-link" size="20"></i>
+                        </a>
+                    </div>
+                    <div class="flex-1 grid grid-cols-2 gap-4 order-1 md:order-2">
+                        <img src="https://picsum.photos/seed/rfnft1/600/600" alt="RFNFT 1" class="rounded-2xl border-2 border-red-600/20 hover:border-red-600 transition-colors" referrerpolicy="no-referrer">
+                        <img src="https://picsum.photos/seed/rfnft2/600/600" alt="RFNFT 2" class="rounded-2xl border-2 border-red-600/20 hover:border-red-600 transition-colors" referrerpolicy="no-referrer">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Singles Section -->
+        <section id="music" class="py-24 px-6 max-w-7xl mx-auto">
+            <h2 class="text-5xl font-black uppercase mb-16 text-center">Latest <span class="text-red-600">Singles</span></h2>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Single 1 -->
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all group">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://picsum.photos/seed/wifi/400/400" alt="Wi-Fi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <a href="https://open.spotify.com/track/6lv9YjTPFKvw4Bnxc1QRnk" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
+                            <a href="https://open.spotify.com/track/6lv9YjTPFKvw4Bnxc1QRnk" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
+                            <a href="https://www.youtube.com/watch?v=ZoEr9JbJznQ" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-black uppercase tracking-wider">Wi-Fi</h3>
+                    </div>
+                </div>
+                <!-- Single 2 -->
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all group">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://picsum.photos/seed/popbottles/400/400" alt="Pop Bottles" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <a href="https://open.spotify.com/track/5XswEK69P8tBThUApT57OH" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
+                            <a href="https://solomonyaw.github.io/ronyfoster1/#" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="external-link"></i></a>
+                            <a href="https://www.youtube.com/watch?v=NcsxsOr8VsQ" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-black uppercase tracking-wider">Pop Bottles</h3>
+                    </div>
+                </div>
+                <!-- Single 3 -->
+                <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all group">
+                    <div class="relative aspect-square overflow-hidden">
+                        <img src="https://picsum.photos/seed/fire/400/400" alt="Fire" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
+                            <a href="https://open.spotify.com/album/7zeFPLUNBeWWTBwcCGpfO9" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
+                            <a href="https://music.apple.com/us/album/fire-single/1506676820" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
+                            <a href="https://www.youtube.com/watch?v=qOerIE8f2gQ" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-black uppercase tracking-wider">Fire</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Video Section -->
+        <section class="py-24 bg-red-600 text-white">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h2 class="text-5xl font-black uppercase mb-4">New Video on YouTube</h2>
+                <p class="text-xl font-bold mb-12 opacity-90 italic">"Warm-Up" - A story of Ghanaian music evolution</p>
+                
+                <div class="aspect-video max-w-4xl mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 mb-12">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        src="https://www.youtube.com/embed/h8WULSpoN9I" 
+                        title="Rony Foster - Warm Up" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                    ></iframe>
+                </div>
+
+                <div class="flex flex-col items-center gap-6">
+                    <p class="text-lg max-w-2xl mx-auto font-medium">
+                        This new song is called "Warm-Up". This song is a story about how the Ghanaian music industry evolved. Please check it out!
+                    </p>
+                    <a 
+                        href="https://www.youtube.com/channel/UCJnl2wXgEbzJaRLKXWFkmzQ" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center gap-3 bg-black text-white font-black uppercase px-12 py-5 rounded-full hover:bg-zinc-900 transition-all transform hover:scale-105"
+                    >
+                        <i data-lucide="youtube" size="24"></i> Subscribe
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Podcast Section -->
+        <section class="py-24 px-6 max-w-7xl mx-auto">
+            <h2 class="text-4xl font-black uppercase mb-16 border-l-4 border-red-600 pl-6">Podcasts & Interviews</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="rounded-2xl overflow-hidden border border-white/10">
+                    <iframe 
+                        width="100%" 
+                        height="166" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay" 
+                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/solomon-yaw/my-interview-with-ahotor-fm-923-in-ghana-part-2&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                    ></iframe>
+                </div>
+                <div class="rounded-2xl overflow-hidden border border-white/10">
+                    <iframe 
+                        width="100%" 
+                        height="166" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay" 
+                        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/solomon-yaw/my-interview-with-ahotor-fm-923-in-ghana-part-1&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                    ></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mixtape Section -->
+        <section class="py-24 bg-zinc-950">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-4xl font-black uppercase mb-16 text-center">Rony Foster's <span class="text-red-600">Mixtape Songs</span></h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
+                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219434742420340737" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
+                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219433642908712961" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
+                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219436941443596289" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
+                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219430344373829633" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
+                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219432543397085185" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Yaa Asantewaa Section -->
+        <section class="py-24 px-6 max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div class="space-y-8">
+                    <h2 class="text-4xl font-black uppercase leading-tight">
+                        Projecting African Identity & History: 
+                        <span class="block text-red-600 text-2xl mt-2">"An animated story of Yaa Asantewaa - A Pre-Gold Coast Story"</span>
+                    </h2>
+                    <div class="prose prose-invert prose-red max-w-none">
+                        <p class="text-lg text-gray-300">
+                            The animation was created by Solomon Yaw (www.github.com/solomonyaw) and background music was provided by Rony Foster. The background song is titled "Beat It".
+                        </p>
+                        <div class="mt-8 space-y-6">
+                            <h3 class="text-xl font-black uppercase text-red-500">The Scenes:</h3>
+                            <div class="space-y-4">
+                                <div class="flex gap-4 items-start">
+                                    <span class="bg-red-600 text-white font-black px-3 py-1 rounded text-sm">Scene 1</span>
+                                    <p class="text-gray-300">The british colonial masters arrives on the shores of the Gold Coast with their ships</p>
+                                </div>
+                                <div class="flex gap-4 items-start">
+                                    <span class="bg-red-600 text-white font-black px-3 py-1 rounded text-sm">Scene 2</span>
+                                    <p class="text-gray-300">The british colonial masters invades the Ashanti Kingdom and arrests its King, Kofi Temeng and his body guard</p>
+                                </div>
+                                <div class="flex gap-4 items-start">
+                                    <span class="bg-red-600 text-white font-black px-3 py-1 rounded text-sm">Scene 3</span>
+                                    <p class="text-gray-300">The colonial masters sends Kofit Temeng and is body guard on exile</p>
+                                </div>
+                                <div class="flex gap-4 items-start">
+                                    <span class="bg-red-600 text-white font-black px-3 py-1 rounded text-sm">Scene 4</span>
+                                    <p class="text-gray-300">The colonial masters dine together and discusses how to re-invade the Ashante Kingdom since they realized Yaa Asantewaa is preparing her army to fight them</p>
+                                </div>
+                                <div class="flex gap-4 items-start">
+                                    <span class="bg-red-600 text-white font-black px-3 py-1 rounded text-sm">Scene 5</span>
+                                    <p class="text-gray-300">The british colonial masters invades the asante kindom once again, defeats Yaa Asantewaa and her armies and finally captures her</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden border-4 border-red-600/20 aspect-[3/4] lg:aspect-auto h-[600px]">
+                    <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219429244862201857" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-zinc-900/50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-5xl font-black uppercase mb-12">Get in <span class="text-red-600">Touch</span></h2>
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-6 group">
+                                <div class="p-4 bg-red-600/10 rounded-2xl group-hover:bg-red-600 transition-all">
+                                    <i data-lucide="phone" class="text-red-600 group-hover:text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm uppercase font-black text-gray-500">Call Me</p>
+                                    <p class="text-xl font-bold">(+39) (329)-114-3219</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 group">
+                                <div class="p-4 bg-red-600/10 rounded-2xl group-hover:bg-red-600 transition-all">
+                                    <i data-lucide="mail" class="text-red-600 group-hover:text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm uppercase font-black text-gray-500">Email Me</p>
+                                    <p class="text-xl font-bold">ronyasante92@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 group">
+                                <div class="p-4 bg-red-600/10 rounded-2xl group-hover:bg-red-600 transition-all">
+                                    <i data-lucide="map-pin" class="text-red-600 group-hover:text-white"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm uppercase font-black text-gray-500">Location</p>
+                                    <p class="text-xl font-bold">Via corso lepetit 43, Darfo boario terme. Italy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form action="mailto:ronyasante92@gmail.com" method="post" enctype="text/plain" class="bg-black/40 p-10 rounded-3xl border border-white/5 space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase font-black tracking-widest text-gray-500">Name</label>
+                                <input type="text" name="name" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 focus:border-red-600 outline-none transition-all" placeholder="Your Name">
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-xs uppercase font-black tracking-widest text-gray-500">Email</label>
+                                <input type="email" name="email" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 focus:border-red-600 outline-none transition-all" placeholder="Your Email">
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs uppercase font-black tracking-widest text-gray-500">Message</label>
+                            <textarea name="message" rows="4" class="w-full bg-zinc-900 border border-white/10 rounded-xl px-4 py-3 focus:border-red-600 outline-none transition-all" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-black uppercase py-4 rounded-xl flex items-center justify-center gap-3 transition-all">
+                            Send Message <i data-lucide="send" size="20"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <div class="flex justify-center gap-8 mb-8">
+            <a href="#" class="text-gray-500 hover:text-red-600 transition-colors"><i data-lucide="instagram"></i></a>
+            <a href="#" class="text-gray-500 hover:text-red-600 transition-colors"><i data-lucide="twitter"></i></a>
+            <a href="#" class="text-gray-500 hover:text-red-600 transition-colors"><i data-lucide="youtube"></i></a>
+            <a href="#" class="text-gray-500 hover:text-red-600 transition-colors"><i data-lucide="music"></i></a>
+        </div>
+        <p id="copyright" class="text-gray-600 text-sm font-bold uppercase tracking-widest">
+            &copy; 2026 Rony Foster. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
