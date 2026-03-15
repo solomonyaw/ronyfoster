@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .layout{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+    </style>
 </head>
 <body class="bg-black text-white font-sans selection:bg-red-600 selection:text-white overflow-x-hidden">
 
@@ -40,17 +48,18 @@
         <section class="relative w-full">
             <div class="relative h-[70vh] overflow-hidden" id="hero-slider">
                 <div class="slider-container h-full w-full relative">
-                    <!-- Slides will be injected by JS -->
+                <!-- Slides will be injected by JS -->
+                
                 </div>
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/50"></div>
                 
                 <div class="absolute inset-0 flex items-center justify-between px-6 z-20">
                     <button id="prev-slide" class="p-2 bg-black/50 hover:bg-red-600 rounded-full transition-colors">
-                        <i data-lucide="chevron-left" size="32"></i>
+                       
                     </button>
                     <button id="next-slide" class="p-2 bg-black/50 hover:bg-red-600 rounded-full transition-colors">
-                        <i data-lucide="chevron-right" size="32"></i>
+                       
                     </button>
                 </div>
 
@@ -92,7 +101,7 @@
                 <div class="relative group">
                     <div class="absolute -inset-4 border-2 border-red-600/30 rounded-2xl group-hover:border-red-600 transition-colors duration-500"></div>
                     <img 
-                        src="https://picsum.photos/seed/rony-about/600/800" 
+                        src="/img/rony.JPG" 
                         alt="Rony Foster" 
                         class="rounded-xl shadow-2xl relative z-10 w-full grayscale hover:grayscale-0 transition-all duration-700"
                         referrerpolicy="no-referrer"
@@ -136,8 +145,8 @@
                         </a>
                     </div>
                     <div class="flex-1 grid grid-cols-2 gap-4 order-1 md:order-2">
-                        <img src="https://picsum.photos/seed/rfnft1/600/600" alt="RFNFT 1" class="rounded-2xl border-2 border-red-600/20 hover:border-red-600 transition-colors" referrerpolicy="no-referrer">
-                        <img src="https://picsum.photos/seed/rfnft2/600/600" alt="RFNFT 2" class="rounded-2xl border-2 border-red-600/20 hover:border-red-600 transition-colors" referrerpolicy="no-referrer">
+                        <img src="/img/NFT-Monkey-removebg-preview.png" alt="RFNFT 1" class="rounded-2xl border-2 border-red-600/20 hover:border-red-600 transition-colors" referrerpolicy="no-referrer">
+                        <img src="/img/RFNFT4.png" alt="RFNFT 2" class="rounded-2xl border-2 border-red-600/20 hover:border-red-600 transition-colors" referrerpolicy="no-referrer">
                     </div>
                 </div>
             </div>
@@ -150,7 +159,7 @@
                 <!-- Single 1 -->
                 <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all group">
                     <div class="relative aspect-square overflow-hidden">
-                        <img src="https://picsum.photos/seed/wifi/400/400" alt="Wi-Fi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
+                        <img src="/img/wi-fi.jpg" alt="Wi-Fi" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <a href="https://open.spotify.com/track/6lv9YjTPFKvw4Bnxc1QRnk" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
                             <a href="https://open.spotify.com/track/6lv9YjTPFKvw4Bnxc1QRnk" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
@@ -164,7 +173,7 @@
                 <!-- Single 2 -->
                 <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all group">
                     <div class="relative aspect-square overflow-hidden">
-                        <img src="https://picsum.photos/seed/popbottles/400/400" alt="Pop Bottles" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
+                        <img src="/img/pop.jpg" alt="Pop Bottles" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <a href="https://open.spotify.com/track/5XswEK69P8tBThUApT57OH" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
                             <a href="https://solomonyaw.github.io/ronyfoster1/#" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="external-link"></i></a>
@@ -178,7 +187,7 @@
                 <!-- Single 3 -->
                 <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/50 transition-all group">
                     <div class="relative aspect-square overflow-hidden">
-                        <img src="https://picsum.photos/seed/fire/400/400" alt="Fire" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
+                        <img src="/img/fire.jpg" alt="Fire" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" referrerpolicy="no-referrer">
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
                             <a href="https://open.spotify.com/album/7zeFPLUNBeWWTBwcCGpfO9" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
                             <a href="https://music.apple.com/us/album/fire-single/1506676820" target="_blank" class="p-3 bg-red-600 rounded-full hover:bg-white hover:text-red-600 transition-all"><i data-lucide="music"></i></a>
@@ -253,31 +262,56 @@
             </div>
         </section>
 
-        <!-- Mixtape Section -->
+       <!-- Mixtape Section -->
         <section class="py-24 bg-zinc-950">
             <div class="max-w-7xl mx-auto px-6">
                 <h2 class="text-4xl font-black uppercase mb-16 text-center">Rony Foster's <span class="text-red-600">Mixtape Songs</span></h2>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
-                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219434742420340737" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <!-- Song 1 -->
+                    <div class="flex flex-col items-center bg-zinc-900/50 p-6 rounded-2xl border border-white/5 hover:border-red-600 transition-all w-full sm:w-64 text-center group">
+                        <p class="text-sm font-bold uppercase mb-4 h-12 flex items-center justify-center">Rony Foster ft snowbit - We Go hard[Audio](Mixtape)</p>
+                        <a href="https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219434742420340737" target="_blank" class="block relative overflow-hidden rounded-xl">
+                            <img src="/img/RFNFT4.png" alt="We Go Hard" class="w-32 h-32 object-cover group-hover:scale-110 transition-transform" onerror="this.src='https://picsum.photos/seed/mixtape1/400/400'">
+                        </a>
                     </div>
-                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
-                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219433642908712961" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                    
+                    <!-- Song 2 -->
+                    <div class="flex flex-col items-center bg-zinc-900/50 p-6 rounded-2xl border border-white/5 hover:border-red-600 transition-all w-full sm:w-64 text-center group">
+                        <p class="text-sm font-bold uppercase mb-4 h-12 flex items-center justify-center">Rony Foster - Round this shit!! bitch![Audio](Mixtape)</p>
+                        <a href="https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219436941443596289" target="_blank" class="block relative overflow-hidden rounded-xl">
+                            <img src="/img/RFNFT4.png" alt="Round this shit" class="w-32 h-32 object-cover group-hover:scale-110 transition-transform" onerror="this.src='https://picsum.photos/seed/mixtape2/400/400'">
+                        </a>
                     </div>
-                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
-                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219436941443596289" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+
+                    <!-- Song 3 -->
+                    <div class="flex flex-col items-center bg-zinc-900/50 p-6 rounded-2xl border border-white/5 hover:border-red-600 transition-all w-full sm:w-64 text-center group">
+                        <p class="text-sm font-bold uppercase mb-4 h-12 flex items-center justify-center">Rony Foster - Boom boom![Audio](Mixtape)</p>
+                        <a href="https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219433642908712961" target="_blank" class="block relative overflow-hidden rounded-xl">
+                            <img src="/img/RFNFT4.png" alt="Boom boom" class="w-32 h-32 object-cover group-hover:scale-110 transition-transform" onerror="this.src='https://picsum.photos/seed/mixtape3/400/400'">
+                        </a>
                     </div>
-                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
-                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219430344373829633" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+
+                    <!-- Song 4 -->
+                    <div class="flex flex-col items-center bg-zinc-900/50 p-6 rounded-2xl border border-white/5 hover:border-red-600 transition-all w-full sm:w-64 text-center group">
+                        <p class="text-sm font-bold uppercase mb-4 h-12 flex items-center justify-center">RONY FOSTER - I you... to love![Audio](mixtape)</p>
+                        <a href="https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219432543397085185" target="_blank" class="block relative overflow-hidden rounded-xl">
+                            <img src="/img/RFNFT4.png" alt="I you to love" class="w-32 h-32 object-cover group-hover:scale-110 transition-transform" onerror="this.src='https://picsum.photos/seed/mixtape4/400/400'">
+                        </a>
                     </div>
-                    <div class="rounded-xl overflow-hidden border border-white/5 hover:border-red-600 transition-all h-[400px]">
-                        <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219432543397085185" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+
+                    <!-- Song 5 -->
+                    <div class="flex flex-col items-center bg-zinc-900/50 p-6 rounded-2xl border border-white/5 hover:border-red-600 transition-all w-full sm:w-64 text-center group">
+                        <p class="text-sm font-bold uppercase mb-4 h-12 flex items-center justify-center">Rony Foster-Baby roll with you[Audio](Mixtape)</p>
+                        <a href="https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219430344373829633" target="_blank" class="block relative overflow-hidden rounded-xl">
+                            <img src="/img/RFNFT4.png" alt="Baby roll with you" class="w-32 h-32 object-cover group-hover:scale-110 transition-transform" onerror="this.src='https://picsum.photos/seed/mixtape5/400/400'">
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Yaa Asantewaa Section -->
+
+          <!-- Yaa Asantewaa Section -->
         <section class="py-24 px-6 max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-16 items-start">
                 <div class="space-y-8">
@@ -316,8 +350,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-3xl overflow-hidden border-4 border-red-600/20 aspect-[3/4] lg:aspect-auto h-[600px]">
-                    <iframe src="https://opensea.io/embed/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219429244862201857" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+                <div class="rounded-3xl overflow-hidden border-4 border-red-600/20 h-[600px] group">
+                    <a href="https://opensea.io/item/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/60435316144120979304288027842728683435902584244000805397690219429244862201857" target="_blank" class="block w-full h-full relative overflow-hidden">
+                        <img src="/img/yaa-asantewaa.jfif" alt="Yaa Asantewaa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.src='https://picsum.photos/seed/yaa/800/1200'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
+                            <span class="text-white font-bold uppercase tracking-widest border-b-2 border-red-600">View on OpenSea</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
