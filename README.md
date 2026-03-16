@@ -95,7 +95,7 @@ transformed into blockchain-based assets.
 <p><strong>RFNFT Manager / Web & Graphic Designer</strong></p>
 
 <p>
-Solomon Yaw is responsible for the technical and creative development of the project.
+Solomon Yaw Adeklois responsible for the technical and creative development of the project.
 </p>
 
 <ul>
