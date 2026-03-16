@@ -91,7 +91,7 @@ This includes music recordings, videos, and other artistic media that are
 transformed into blockchain-based assets.
 </p>
 
-<h3>💻 Solomon Yaw</h3>
+<h3>💻 Solomon Yaw  Adeklo</h3>
 <p><strong>RFNFT Manager / Web & Graphic Designer</strong></p>
 
 <p>
