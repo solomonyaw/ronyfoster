@@ -12,7 +12,7 @@ const SLIDER_IMAGES = [
 lucide.createIcons();
 
 // Set Background GIF
-document.getElementById('bg-gif').style.backgroundImage = `url(${BACKGROUND_GIF_URL})`;
+document.getElementById('bg-gif').style.backgroundImage = `url(${'./img/bg.gif'})`;
 
 // Slider Logic
 const sliderContainer = document.querySelector('.slider-container');
